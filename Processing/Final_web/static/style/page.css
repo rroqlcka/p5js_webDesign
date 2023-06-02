@@ -1,0 +1,15 @@
+#main_page{
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_page > img{
+    width: 150px;
+    filter: drop-shadow(0px 0px 3px black);
+    /*display: flex;*/
+}
