@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizespeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+.pageHeader a {
+    text-decoration: none;
+    color: black;
+}
+
+/* visited link */
+.pageHeader a:visited {
+  color: black;
+}
+
+span{
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none; /* 밑줄 제거 */
+    color: white; /* 부모 요소의 글자 색상 상속 */
+}

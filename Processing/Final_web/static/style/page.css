@@ -8,8 +8,33 @@
     align-items: center;
 }
 
-#main_page > img{
+.background{
+    position: relative;
+}
+
+#main_page a{
+    position: absolute;
     width: 150px;
+    height: 150px;
+    transition: 0.3s;
+}
+
+.Icon_img{
+    position: absolute;
+}
+
+#main_page a:hover{
     filter: drop-shadow(0px 0px 3px black);
-    /*display: flex;*/
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #ffffff; /* 하얀색 */
+    position: absolute;
+    top: 400px;
+    left: 948px;
+    rotate: 180deg;
 }
