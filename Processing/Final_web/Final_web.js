@@ -11,10 +11,10 @@ let endToStart = 0;
 let startToEnd = 255;
 
 function setup() {
-
-  createCanvas(1920, 1090);
-  x = width / 2;
-  y = 1090 / 2;
+  let canvasStart = createCanvas(1920,1080);
+  canvasStart.parent('myDiv');
+  x = random(width-5);
+  y = random(height-5);
   startColor = color(255);
   endColor = color(0);
 }
@@ -23,7 +23,7 @@ function draw() {
 
   noStroke();
   fill(endToStart);
-  rect(0, 0, width, 1090);
+  rect(0, 0, width, 1080);
 
   // 공 이동
   x += speedX;
@@ -41,6 +41,7 @@ function draw() {
   // 보간된 색상 계산
   startToEnd = lerpColor(startColor, endColor, percent);
   endToStart = lerpColor(endColor, startColor, percent);
+
   // 공 그리기
 
   noStroke();
@@ -70,7 +71,9 @@ function draw() {
   text("+82) 10-4338-0887",196,97);
   text("한양대학로 55",196,151);
 
-
+  //삼각형 화살표
+  fill(startToEnd);
+  triangle(1350, 250, 1350, 300, 1400, 275);
 
   // 보간 상태 업데이트
   if(hitCheck){
@@ -86,5 +89,29 @@ function draw() {
     }
   }
 
+  // function mouseClicked() {
+  //   if (mouseX >= 1350 && mouseX <= 1400 && mouseY >= 250 && mouseY <= 350) {
+  //     window.location.href = "test.html";
+  //   }
+  // }
+
 }
 
+
+function mouseClicked() {
+  checkCollision(mouseX, mouseY);
+}
+
+function checkCollision(x, y) {
+  // 도형의 좌표와 크기
+  let rectX = 100;
+  let rectY = 100;
+  let rectWidth = 200;
+  let rectHeight = 150;
+
+  // 클릭된 위치가 도형 내부에 있는지 확인
+  if (x >= 1350 && x <= 1400 + rectWidth && y >= 250 && y <= 350) {
+    // 다른 HTML 파일로 이동
+    window.location.href = "test.html";
+  }
+}
