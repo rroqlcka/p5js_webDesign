@@ -1,0 +1,112 @@
+#first_page{
+    width: 1920px;
+    height: 1090px;
+    background-color: black;
+    color: white;
+}
+
+#leftWrap{
+    display: flex;
+    width: 799px;
+    height: 212px;
+}
+
+#first_page_first{
+    display: flex;
+    flex-direction: column;
+}
+
+#first_page_second{
+    display: flex;
+    flex-direction: column;
+}
+
+#first_page div{
+    position: relative;
+}
+
+#html_css_p5{
+    position: absolute;
+    width: 48px;
+    height: 78px;
+    left: 1737px;
+    top: 43px;
+
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: right;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+
+}
+
+.icons_x{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 1820px;
+}
+
+.black_white_stick{
+    position: relative;
+    width: 10px;
+    height: 300px;
+    left: 331px;
+}
+
+.black_white_welcome{
+    position: relative;
+    height: 18px;
+    left: 437px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1em;
+}
+
+
+/*second page*/
+
+#second_page{
+    width: 1920px;
+    height: 1090px;
+    background-color: white;
+    color: black;
+}
+
+#thisis_{
+    position: relative;
+    width: 725px;
+    height: 240px;
+    left: 437px;
+    top: 300px;
+
+    /*font-style: normal;*/
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 0.5em;
+}
+
+
+
+/*third page*/
+
+#third_page{
+    position: absolute;
+    width: 1920px;
+    height: 3000px;
+    background-color:black;
+    z-index: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+}
