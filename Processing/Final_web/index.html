@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>만나보세요</title>
-  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
-  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
-  <link rel="stylesheet" href="static/style/page.css">
-  <link rel="stylesheet" href="static/style/setup.css">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js">
+    </script>
+    <!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Load d3-cloud -->
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 
 
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
-  </style>
-</head>
-
-<body>
 
 
-  <div id="main_page">
-    <img id="background" style="width: 1920px;height: 1080px;" src="static/img/gradient_orange.avif">
-    <a href="startPage.html">
-      <img id="Icon_img" src="static/img/Icon_final_web.png">
-    </a>
-    <div class="triangle"></div>
-  </div>
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
 
-</body>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
 </html>
