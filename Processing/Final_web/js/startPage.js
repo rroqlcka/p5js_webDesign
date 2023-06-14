@@ -112,6 +112,6 @@ function checkCollision(x, y) {
   // 클릭된 위치가 도형 내부에 있는지 확인
   if (x >= 1350 && x <= 1400 + rectWidth && y >= 250 && y <= 350) {
     // 다른 HTML 파일로 이동
-    window.location.href = "test.html";
+    window.location.href = "wordCould.html";
   }
 }
