@@ -5,7 +5,7 @@ let upButton, downButton;
 let normalizedData = [];
 
 function preload() {
-    university_table = loadTable('/static/data/university_final_result.csv', 'csv', 'noheader');
+    university_table = loadTable('/Final_web/static/data/university_final_result.csv', 'csv', 'noheader');
 }
 
 function setup() {
